@@ -11,7 +11,7 @@ for i in range(1, seq_len):
     last_num_list = nums_list[len(nums_list) - 1]
     cur_num = 1
     for j in range(len(last_num_list) - 1, -1, -1):
-        temp = last_num_list[j]                                                      
+        temp = last_num_list[j]
         while temp:
             new_num_list.append(cur_num)
             temp -= 1
@@ -23,3 +23,4 @@ with open('out.txt', 'w') as f:
     for num_list in nums_list:
         f.write(str(sum(num_list)) + '\n')
     f.close()
+
